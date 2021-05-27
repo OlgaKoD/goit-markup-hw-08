@@ -381,7 +381,7 @@ img {
 
 @media (min-resolution: 2dppx) {
   .solutions {
-    background-image: url("../images/bg-image/mobile-bg@2x.jpg");
+    background-image: linear-gradient(to right, var(--solutions-gradient-color), var(--solutions-gradient-color)), url("../images/bg-image/mobile-bg@2x.jpg");
   }
 }
 
@@ -393,7 +393,7 @@ img {
 
 @media (min-resolution: 2dppx) and (min-width: 480px) and (min-resolution: 2dppx) {
   .solutions {
-    background-image: url("../images/bg-image/tablet-bg@2x.jpg");
+    background-image: linear-gradient(to right, var(--solutions-gradient-color), var(--solutions-gradient-color)), url("../images/bg-image/tablet-bg@2x.jpg");
   }
 }
 
@@ -409,7 +409,7 @@ img {
 
 @media (min-resolution: 2dppx) and (min-width: 480px) and (min-width: 768px) and (min-resolution: 2dppx) {
   .solutions {
-    background-image: url("../images/bg-image/desktop-bg@2x.jpg");
+    background-image: linear-gradient(to right, var(--solutions-gradient-color), var(--solutions-gradient-color)), url("../images/bg-image/desktop-bg@2x.jpg");
   }
 }
 
