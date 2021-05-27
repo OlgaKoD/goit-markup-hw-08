@@ -1,0 +1,13 @@
+.footer-section {
+  background-color: var(--dark-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
