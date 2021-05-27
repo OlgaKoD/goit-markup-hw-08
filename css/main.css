@@ -55,7 +55,7 @@ h6 {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -127,8 +127,8 @@ img {
   border: none;
   width: 40px;
   height: 40px;
-  margin: 0;
   margin-left: auto;
+  margin-right: 0;
   padding: 0;
   cursor: pointer;
   z-index: 99;
@@ -285,13 +285,24 @@ img {
 }
 
 .header-logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
   font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--nav-header-color);
+}
+
+@media screen and (max-width: 769.9px) {
+  .header-logo {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1385,14 +1396,14 @@ img {
   align-items: center;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 767.9px) {
   .header-container {
     padding-top: 10px;
     padding-bottom: 10px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .header-container {
     justify-content: space-between;
   }
