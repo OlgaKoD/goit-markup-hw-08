@@ -62,9 +62,6 @@
     }
   }
 }
-// .mobile-menu__list--contacts {
-// margin-top: 300px;
-//}
 
 .mobile-menu__contacts-link {
   display: inline-block;
@@ -77,7 +74,8 @@
   transform: font-size 250ms var(--cubic-bezier), line-height 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier);
 
   &:hover,
-  &:focus {
+  &:focus,
+  &.current {
     font-size: 34px;
     line-height: 1.17;
     color: var(--accent-color);

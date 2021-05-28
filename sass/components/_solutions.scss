@@ -10,25 +10,25 @@
   background-size: cover;
 }
 
-@media (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .solutions {
     background-image: linear-gradient(to right, var(--solutions-gradient-color), var(--solutions-gradient-color)),
       url('../images/bg-image/mobile-bg@2x.jpg');
   }
 
-  @media (min-width: 480px) {
+  @media (min-width: 768px) {
     .solutions {
       background-image: linear-gradient(to right, var(--solutions-gradient-color), var(--solutions-gradient-color)),
         url('../images/bg-image/tablet-bg@1x.jpg');
     }
 
-    @media (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       .solutions {
         background-image: linear-gradient(to right, var(--solutions-gradient-color), var(--solutions-gradient-color)),
           url('../images/bg-image/tablet-bg@2x.jpg');
       }
     }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       .solutions {
         padding-top: 200px;
         padding-bottom: 200px;
@@ -38,7 +38,7 @@
         height: 600px;
       }
 
-      @media (min-resolution: 2dppx) {
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .solutions {
           background-image: linear-gradient(to right, var(--solutions-gradient-color), var(--solutions-gradient-color)),
             url('../images/bg-image/desktop-bg@2x.jpg');
