@@ -24,7 +24,8 @@
   border-bottom-right-radius: 4px;
 
   @media screen and (min-width: 480px) {
-    flex-basis: calc((100% - 1 * 30px) / 1);
+    flex-basis: calc((100% - 30px) / 1);
+    align-self: center;
   }
 
   @media screen and (min-width: 768px) {

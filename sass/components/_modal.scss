@@ -1,7 +1,8 @@
 .solutions-modal {
   position: relative;
   width: 100%;
-  min-height: 610px;
+  /*min-height: 610px;*/
+  height: fit-content;
   padding: 40px;
 
   background-color: var(--alt-title-color);
@@ -21,7 +22,7 @@
   @media screen and (min-width: 1200px) {
     min-width: 528px;
     /*height: 581px;*/
-    height: auto;
+    height: fit-content;
   }
 
   .is-hidden & {

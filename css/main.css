@@ -506,7 +506,8 @@ img {
 .solutions-modal {
   position: relative;
   width: 100%;
-  min-height: 610px;
+  /*min-height: 610px;*/
+  height: fit-content;
   padding: 40px;
   background-color: var(--alt-title-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -529,7 +530,7 @@ img {
   .solutions-modal {
     min-width: 528px;
     /*height: 581px;*/
-    height: auto;
+    height: fit-content;
   }
 }
 
@@ -900,7 +901,8 @@ img {
 
 @media screen and (min-width: 480px) {
   .team-list__card {
-    flex-basis: calc((100% - 1 * 30px) / 1);
+    flex-basis: calc((100% - 30px) / 1);
+    align-self: center;
   }
 }
 
