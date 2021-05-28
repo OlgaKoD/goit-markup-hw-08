@@ -7,26 +7,22 @@
 
   @media screen and (min-width: 768px) and (max-width: 1199.9px) {
     display: flex;
-    /*justify-content: space-around;*/
-  }
-
-  @media screen and (max-width: 1199.9px) {
+    justify-content: space-around;
     margin-bottom: 60px;
   }
 
+  /*@media screen and (max-width: 1199.9px) {
+  }*/
+
   @media screen and (min-width: 1200px) {
     display: flex;
-    /*align-items: baseline;*/
+    align-items: baseline;
   }
 }
 
 .address-block {
   @media screen and (max-width: 767.9px) {
     margin-bottom: 60px;
-    text-align: center;
-  }
-
-  @media screen and (max-width: 1199.9px) {
     text-align: center;
   }
 
@@ -39,6 +35,10 @@
   line-height: 1.71;
   color: var(--alt-title-color);
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .address__margin:not(:last-child) {

@@ -26,20 +26,22 @@
 
 .footer-logo {
   display: flex;
+  text-align: center;
   align-items: center;
+  justify-content: center;
   font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--alt-title-color);
 
-  @media screen and (max-width: 1200px) {
-    display: inline-block;
+  @media screen and (min-width: 1200px) {
+    justify-content: left;
   }
 }
 
 .footer-logo__margin {
-  margin-right: 0;
+  /*margin-right: 0;*/
   margin-bottom: 20px;
 }
 

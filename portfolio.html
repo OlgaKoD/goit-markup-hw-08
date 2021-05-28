@@ -466,66 +466,68 @@
     </main>
     <footer class="footer-section">
       <div class="container footer-container">
-        <div>
-          <!-- Логотип-ссылка -->
-          <a href="./index.html" class="logo-link footer-logo footer-logo__margin"
-            ><span class="logo-link--accented">Web</span>Studio</a
-          >
-          <!-- Адрес-->
-          <address class="address">
-            <ul class="list">
-              <li class="address__margin">
-                <a
-                  href="https://goo.gl/maps/rV815ZwH7v6qxF1P7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="link address__map"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="contacts-block">
+          <div class="address-block">
+            <!-- Логотип-ссылка -->
+            <a href="./index.html" class="logo-link footer-logo footer-logo__margin"
+              ><span class="logo-link--accented">Web</span>Studio</a
+            >
+            <!-- Адрес-->
+            <address class="address">
+              <ul class="list">
+                <li class="address__margin">
+                  <a
+                    href="https://goo.gl/maps/rV815ZwH7v6qxF1P7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link address__map"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="address__margin">
+                  <a href="mailto:info@example.com" class="link address__contacts">info@example.com</a>
+                </li>
+                <li class="address__marin">
+                  <a href="tel:+380991111111" class="link address__contacts">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social-networks">
+            <p class="footer-social-networks__text footer-social-networks__text-margin">присоединяйтесь</p>
+            <ul class="list social-networks__list">
+              <li class="social-network__margin">
+                <a class="link footer-social-network__link" href="" target="_blank" rel="noopener noreferrer">
+                  <svg class="footer-social-network__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__margin">
-                <a href="mailto:info@example.com" class="link address__contacts">info@example.com</a>
+              <li class="social-network__margin">
+                <a class="link footer-social-network__link" href="" target="_blank" rel="noopener noreferrer">
+                  <svg class="footer-social-network__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__margin">
-                <a href="tel:+380991111111" class="link address__contacts">+38 099 111 11 11</a>
+              <li class="social-network__margin">
+                <a class="link footer-social-network__link" href="" target="_blank" rel="noopener noreferrer">
+                  <svg class="footer-social-network__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-network__margin">
+                <a class="link footer-social-network__link" href="" target="_blank" rel="noopener noreferrer">
+                  <svg class="footer-social-network__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div>
-          <p class="footer-social-networks__text footer-social-networks__text-margin">присоединяйтесь</p>
-          <ul class="list social-networks__list">
-            <li class="social-network__margin">
-              <a class="link footer-social-network__link" href="" target="_blank" rel="noopener noreferrer">
-                <svg class="footer-social-network__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-network__margin">
-              <a class="link footer-social-network__link" href="" target="_blank" rel="noopener noreferrer">
-                <svg class="footer-social-network__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-network__margin">
-              <a class="link footer-social-network__link" href="" target="_blank" rel="noopener noreferrer">
-                <svg class="footer-social-network__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-network__margin">
-              <a class="link footer-social-network__link" href="" target="_blank" rel="noopener noreferrer">
-                <svg class="footer-social-network__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <form action="#" method="POST" autocomplete="off">
+        <form class="subscribe__form" action="#" method="POST" autocomplete="off">
           <label class="subscribe__label" for="subscribe">подпишитесь на рассылку</label>
           <div class="subscribe-container">
             <input type="email" name="user-mail" class="subscribe__email" id="subscribe" placeholder="Email" />
