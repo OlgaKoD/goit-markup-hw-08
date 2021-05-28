@@ -478,6 +478,7 @@ img {
   top: 0;
   width: 100%;
   height: 100%;
+  z-index: 99;
   background-color: var(--backdrop-background-color);
   overflow-y: scroll;
   transition: opacity 250ms var(--cubic-bezier), visibility 250ms var(--cubic-bezier);
@@ -503,7 +504,6 @@ img {
     top: 50%;
     transform: translate(-50%, -50%);
     /*scale(1)*/
-    z-index: 99;
   }
 }
 
@@ -511,7 +511,6 @@ img {
   .solutions-modal {
     width: 528px;
     height: 581px;
-    padding: 40px;
   }
 }
 
