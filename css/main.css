@@ -437,6 +437,7 @@ img {
 @media (min-width: 1200px) {
   .solutions {
     background-image: linear-gradient(to right, var(--solutions-gradient-color), var(--solutions-gradient-color)), url("../images/bg-image/desktop-bg@1x.jpg");
+    background-position: center;
     max-width: 1600px;
     height: 600px;
   }
