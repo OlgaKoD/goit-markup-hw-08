@@ -35,8 +35,13 @@ body {
   background-color: var(--alt-title-color);
 }
 
-body.modal-open, body.is-open {
+body.modal-open {
   overflow: hidden;
+}
+
+body.is-open {
+  overflow: hidden;
+  height: 100vh;
 }
 
 h1,

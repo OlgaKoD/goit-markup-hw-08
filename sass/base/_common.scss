@@ -6,9 +6,13 @@ body {
   color: var(--main-text-color);
   background-color: var(--alt-title-color);
 
-  &.modal-open,
+  &.modal-open {
+    overflow: hidden;
+  }
+
   &.is-open {
     overflow: hidden;
+    height: 100vh;
   }
 }
 
