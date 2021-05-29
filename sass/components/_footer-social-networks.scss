@@ -2,7 +2,6 @@
   @media screen and (max-width: 1199.9px) {
     margin-bottom: 60px;
     text-align: center;
-    vertical-align: bottom;
   }
 }
 
@@ -13,8 +12,15 @@
 }
 
 .footer-social-networks__text-margin {
-  margin-top: 0px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0px;
+  }
 }
 
 .footer-social-network__link {

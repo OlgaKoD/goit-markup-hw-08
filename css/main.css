@@ -767,6 +767,7 @@ img {
 @media screen and (min-width: 480px) {
   .features__cards {
     flex-basis: calc((100% - 1 * 30px) / 1);
+    align-self: center;
   }
 }
 
@@ -1259,6 +1260,7 @@ img {
     display: flex;
     justify-content: space-around;
     margin-bottom: 60px;
+    align-items: center;
   }
 }
 
@@ -1313,7 +1315,6 @@ img {
   .footer-social-networks {
     margin-bottom: 60px;
     text-align: center;
-    vertical-align: bottom;
   }
 }
 
@@ -1324,8 +1325,19 @@ img {
 }
 
 .footer-social-networks__text-margin {
-  margin-top: 0px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .footer-social-networks__text-margin {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social-networks__text-margin {
+    margin-top: 0px;
+  }
 }
 
 .footer-social-network__link {
