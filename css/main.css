@@ -35,7 +35,7 @@ body {
   background-color: var(--alt-title-color);
 }
 
-body.modal-open {
+body.modal-open, body.is-open {
   overflow: hidden;
 }
 
