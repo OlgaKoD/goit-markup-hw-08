@@ -83,9 +83,13 @@
   &:hover,
   &:focus,
   &.current {
-    font-size: 34px;
+    font-size: 26px;
     line-height: 1.17;
     color: var(--accent-color);
+  }
+  @media screen and (max-width: 479.9px) {
+    font-size: 20px;
+    line-height: 1.16;
   }
 }
 
@@ -98,13 +102,17 @@
   display: inline-block;
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.17;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--title-color);
   transition: color 250ms var(--cubic-bezier);
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  @media screen and (max-width: 479.9px) {
+    font-size: 32px;
+    line-height: 1.16;
   }
 }
 .mobile-menu__link--current {
@@ -144,6 +152,11 @@
     display: block;
     background-color: var(--modal-form-input-border);
   }
+
+  @media screen and (max-width: 479.9px) {
+    font-size: inherit;
+    line-height: 1.16;
+  }
 }
 .mobile-menu__social-network-link--no-border {
   position: relative;
@@ -152,4 +165,9 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+
+  @media screen and (max-width: 479.9px) {
+    font-size: inherit;
+    line-height: 1.16;
+  }
 }
