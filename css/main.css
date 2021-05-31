@@ -22,7 +22,7 @@
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts__email, .contacts__phone, .contact-form, .features__icon-wrap, .works__list, .works__overlay, .team-list, .filter__list, .projects, .overlay, .subscribe-container, .subscribe__email, .subscribe__button, .subscribe__icon, .header-container, .navigation__pages {
+.contacts__email, .contacts__phone, .contact-form, .features__icon-wrap, .works__list, .works__overlay, .team-list, .filter__list, .projects, .overlay, .contacts-block, .subscribe-container, .subscribe__email, .subscribe__button, .subscribe__icon, .header-container, .navigation__pages {
   display: flex;
 }
 
@@ -757,60 +757,7 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-/*.checkbox-container {
-  @extend %flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.checkbox__input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -appearance: none;
-  position: absolute;
-}
-
-.checkbox__wrap {
-  position: relative;
-  align-self: end;
-  width: 16px;
-  height: 15px;
-  background-color: var(--alt-title-color);
-  border: 2px solid var(--nav-header-color);
-  border-radius: 2px;
-  cursor: pointer;
-
-  transition: background-color 250ms var(--cubic-bezier), border 250ms var(--cubic-bezier);
-
-  @media screen and (min-width: 1200px) {
-    align-self: center;
-  }
-
-  .checkbox__input:hover + & {
-    border: 2px solid var(--accent-color);
-  }
-
-  .checkbox__input:checked + & {
-    background-color: var(--accent-color);
-    border: 2px solid var(--accent-color);
-  }
-
-
-.checkbox__wrap-margin {
-  margin-right: 7px;
-}
-
-.checkbox__icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  fill: var(--alt-title-color);
-  stroke: var(--alt-title-color);
-}*/
 .checkbox__label {
-  /*@extend %flex;*/
   display: inline-block;
   text-align: center;
   font-size: 12px;
@@ -1395,32 +1342,28 @@ img {
   margin: 0;
 }
 
-.contacts-block {
-  /*@media screen and (max-width: 1199.9px) {
-  }*/
-}
-
 @media screen and (max-width: 767.9px) {
   .contacts-block {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+@media screen and (max-width: 1199.9px) {
   .contacts-block {
-    display: flex;
-    justify-content: space-around;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-block {
     align-items: baseline;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .contacts-block {
-    display: flex;
-    align-items: baseline;
+    justify-content: space-around;
   }
 }
 
@@ -1464,25 +1407,16 @@ img {
   text-decoration: none;
 }
 
-@media screen and (max-width: 767.9px) {
-  .footer-social-networks {
-    margin-bottom: 60px;
-  }
-}
-
 @media screen and (max-width: 1199.9px) {
   .footer-social-networks {
     text-align: center;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.9px) {
-  .footer-social-networks {
+    align-items: center;
     margin-bottom: 60px;
   }
 }
 
 .footer-social-networks__text {
+  align-items: baseline;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--alt-title-color);
@@ -1576,7 +1510,7 @@ img {
 
 @media screen and (max-width: 479.9px) {
   .subscribe__email {
-    min-width: 320px;
+    min-width: 300px;
   }
 }
 
@@ -1586,16 +1520,20 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 768px) {
   .subscribe__email {
     min-width: 358px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .subscribe__email {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .subscribe__email {
-    min-width: 358px;
     margin-right: 12px;
   }
 }

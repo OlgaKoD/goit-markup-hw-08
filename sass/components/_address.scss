@@ -1,23 +1,20 @@
 .contacts-block {
+  @extend %flex;
+
   @media screen and (max-width: 767.9px) {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
-    display: flex;
-    justify-content: space-around;
+  @media screen and (max-width: 1199.9px) {
     margin-bottom: 60px;
-    align-items: baseline;
   }
 
-  /*@media screen and (max-width: 1199.9px) {
-  }*/
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
+  @media screen and (min-width: 768px) {
     align-items: baseline;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    justify-content: space-around;
   }
 }
 

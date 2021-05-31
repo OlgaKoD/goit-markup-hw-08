@@ -1,21 +1,19 @@
 .footer-social-networks {
-  @media screen and (max-width: 767.9px) {
-    margin-bottom: 60px;
-  }
-
   @media screen and (max-width: 1199.9px) {
     text-align: center;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+    align-items: center;
     margin-bottom: 60px;
   }
 }
 
 .footer-social-networks__text {
+  align-items: baseline;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--alt-title-color);
+
+  @media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  }
 }
 
 .footer-social-networks__text-margin {
