@@ -127,10 +127,9 @@
 .checkbox__label {
   /*@extend %flex;*/
   display: inline-block;
-  /*text-align: center;*/
+  text-align: center;
   font-size: 12px;
   line-height: 1.16;
-  /*white-space: nowrap;*/
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
