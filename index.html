@@ -28,7 +28,7 @@
             <li class="mobile-menu__item"><a class="link mobile-menu__link" href="./portfolio.html">Портфолио</a></li>
             <li class="mobile-menu__item"><a class="link mobile-menu__link" href="">Контакты</a></li>
           </ul>
-          <div class="modal-menu__wrap">
+          <div>
             <ul class="list mobile-menu__list mobile-menu__list--contacts">
               <li class="mobile-menu__item">
                 <a class="link mobile-menu__contacts-link current" href="tel:+380961111111"> +38 096 111 11 11 </a>
@@ -606,24 +606,34 @@
               id="order-comment"
             ></textarea>
           </div>
-          <div class="checkbox-container checkbox-container__position">
+          <!-- <div class="checkbox-container checkbox-container__position">
             <label for="policy" class="checkbox__label"
               ><input type="checkbox" name="policy" value="Agree" class="checkbox__input" id="policy" />
               <span class="checkbox__wrap checkbox__wrap-margin">
                 <svg class="checkbox__icon" width="16" height="15">
-                  <use href="./images/icons.svg#icon-check"></use>
-                </svg>
-              </span>
-              Соглашаюсь с рассылкой и принимаю
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                class="checkbox__link--accented checkbox__link-margin"
-                >Условия договора</a
+                  <use href="./images/icons.svg#icon-check"></use></svg></span
+              ><span> Соглашаюсь с рассылкой и принимаю</span
+              ><span>
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="checkbox__link--accented checkbox__link-margin"
+                  >Условия договора</a
+                ></span
               ></label
             >
-          </div>
+          </div>-->
+          <input class="visually-hidden checkbox__input" type="checkbox" name="policy" id="policy" required />
+          <label class="checkbox__label checkbox__label-margin" for="policy"
+            >Соглашаюсь с рассылкой и принимаю<a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="checkbox__link--accented checkbox__link-margin"
+              >Условия договора</a
+            ></label
+          >
           <button type="submit" class="contact-form__submit-button">Отправить</button>
         </form>
       </div>

@@ -4,19 +4,22 @@
   }
 
   @media screen and (min-width: 1200px) {
-    display: block;
+    display: flex;
     padding-top: 0;
   }
 }
 
 .works__list {
   @extend %flex;
-  margin-right: -30px;
+  justify-content: center;
 }
 
 .works__card {
   flex-basis: calc((100% - 3 * 30px) / 3);
-  margin-right: 30px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .works__thumb {

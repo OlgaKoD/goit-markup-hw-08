@@ -12,6 +12,10 @@ body {
 
   &.is-open {
     overflow: hidden;
+    /*height: 100vh;*/
+  }
+  &.menu-open {
+    overflow: hidden;
     height: 100vh;
   }
 }
